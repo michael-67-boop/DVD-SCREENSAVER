@@ -1,0 +1,19 @@
+palettes:
+  - name: mypalette          
+    images: automatic        
+
+converts:
+  - name: myimages           
+    palette: mypalette       
+    images:                  
+      - sprite1.png
+      - sprite2.png
+      - sprite3.png
+
+outputs:
+  - type: c                  
+    include-file: gfx.h      
+    palettes:
+      - mypalette
+    converts:
+      - myimages
